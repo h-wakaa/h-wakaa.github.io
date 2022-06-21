@@ -1,217 +1,74 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><!--
-    Modified from the Debian original for Ubuntu
-    Last updated: 2022-03-22
-    See: https://launchpad.net/bugs/1966004
-  --><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>h-wakaa.github.io</title>
-    <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head>
 
-  body, html {
-    padding: 3px 3px 3px 3px;
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title>Ceevee Web Design</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-    background-color: #D8DBE2;
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    font-family: Ubuntu, Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-  div.main_page {
-    position: relative;
-    display: table;
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
 
-    width: 800px;
+   <!-- Favicons
+   ================================================== -->
+   <link rel="shortcut icon" href="favicon.png">
 
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
+</head>
 
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
+<body style="width: 100%;">
 
-    background-color: #FFFFFF;
+   <!-- Header
+   ================================================== -->
+   <header id="home" style="height: 625px;">
 
-    text-align: center;
-  }
+       <!-- end #nav-wrap -->
 
-  div.page_header {
-    height: 100px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  div.banner {
-    padding: 9px 6px 9px 6px;
-    background-color: #E9510E;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 100%;
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    bottom: 30px;
-    width: 40%;
-  }
-
-  div.table_of_contents {
-    clear: left;
-
-    min-width: 200px;
-
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.table_of_contents_item {
-    clear: left;
-
-    width: 100%;
-
-    margin: 4px 0px 0px 0px;
-
-    background-color: #FFFFFF;
-
-    color: #000000;
-    text-align: left;
-  }
-
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
-
-  div.content_section {
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    color: #000000;
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: #F5F6F7;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #8E9CB2;
-
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
-    </style>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="page_header floating_element">
-        
-        <div>
-          
-        </div>
-        <div class="banner">
-          <div id="about"></div>
-          h-wakaa.github.io - It works!!!
-        </div>
-
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline" style="font-size: 63.5px;">I'm Programmer</h1>
+            <h3>I'm a  <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#">about me</a>.</h3>
+            <hr>
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
       </div>
+
       
-    </div>
-    <div class="validator">
-    </div>
-  
+
+   </header> <!-- Header End -->
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+
 
 </body></html>
